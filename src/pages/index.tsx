@@ -1,9 +1,28 @@
 import Head from 'next/head'
-import Navbar from '@/Components/navbar';
-import { Spacer, Center, Heading, Card, Flex, Container } from '@chakra-ui/react';
-import { Text, SimpleGrid, Space } from '@mantine/core';
+import React from "react";
+
+import { Button, Link, Card, Badge, Avatar, Input, Spacer, Radio, useTheme, Container, Row, Col, Grid } from "@nextui-org/react";
+import { SimpleGrid, Center, TimelineItem, Title, Text } from '@mantine/core';
+import CardContent from '@mui/material/CardContent'
+import Navbar from '../Components/navbar'
 
 export default function Home() {
+
+  const theme = {
+    global: {
+      font: {
+        family: 'Roboto',
+        size: '18px',
+        height: '20px',
+      },
+    },
+  };
+
+  const statCard = {
+    backgroundColor: 'white'
+  };
+
+
   return (
     <>
       <Head>
@@ -17,52 +36,54 @@ export default function Home() {
         />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap" rel="stylesheet"></link>
       </Head>
-    <Navbar/>
-    <Container maxW='2xl' centerContent>
-      <Spacer margin={50}></Spacer>
-        <Center>
-          <Text
-          variant="gradient"
-          gradient={{ from: 'indigo', to: 'white', deg: 45 }}
-          sx={{ fontFamily: 'Open Sans, sans-serif' }}
-          ta="center"
-          fz="50px"
-          fw={700}
-          >
-          Decentral Games
-          </Text>
+    <Container>
+    <Spacer></Spacer>
+      <Center>
+        <Title order={3} size="h1">
+            Decentral Games
+        </Title>
         </Center>
         <Center>
-          <Text size={15} sx={{ fontFamily: 'Open Sans, sans-serif' }}>$ICE Supply Statistics</Text>
+        <Title size="h4">ICE Supply Statistics</Title>
         </Center>
-      <SimpleGrid
+    </Container>
+    <Container md>
+     <Spacer></Spacer>
+     <SimpleGrid
           cols={2}
           spacing={20}
-          breakpoints={[{ maxWidth: 700, cols: 1, spacing: 20 }]}
+          breakpoints={[{ maxWidth: 550, cols: 1, spacing: 20 }]}
           style={{ marginTop: 30 }}
           >
       <div>
-        <Card padding={2} borderRadius={30} >
-        <Center>
-          <iframe src='https://dune.com/embeds/2006249/3319814'width="100%" height="427" style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
-        </Center>
+        <Card style={statCard} sx={{ position: 'relative'}} borderWeight='10' isHoverable >
+              <CardContent>
+                <Center>
+                <iframe src='https://dune.com/embeds/2006249/3319814'width="100%" height="460" style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
+                </Center>
+              </CardContent>
         </Card>
       </div>
       <div>
-        <Card padding={2} borderRadius={30}>
-        <Center>
-        <iframe src='https://dune.com/embeds/2006249/3319918'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
-        </Center>
+      <Card style={statCard} sx={{ position: 'relative'}} borderWeight='10' isHoverable >
+              <CardContent>
+                <Center>
+                <iframe src='https://dune.com/embeds/2006249/3319918'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
+                </Center>
+              </CardContent>
         </Card>
-        <Space h="xs" />
-        <Card padding={2} borderRadius={30}>
-        <Center>
-        <iframe src='https://dune.com/embeds/2006249/3326219'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
-        </Center>
+        <Spacer></Spacer>
+        <Card style={statCard} sx={{ position: 'relative'}} borderWeight='10' isHoverable >
+              <CardContent>
+                <Center>
+                <iframe src='https://dune.com/embeds/2006249/3326219'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
+                </Center>
+              </CardContent>
         </Card>
       </div>
-      </SimpleGrid>
-      <Space h={50}/>
+    </SimpleGrid>
+    <Spacer></Spacer>
+    <Spacer></Spacer>
     </Container>
     </>
   )

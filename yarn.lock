@@ -1134,6 +1134,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@heroicons/react@^2.0.15":
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.15.tgz#e1fc966350577a1ab0e38211e7b58e4bf8285b49"
+  integrity sha512-CZ2dGWgWG3/z5LEoD5D3MEr1syn45JM/OB2aDpw531Ryecgkz2V7TWQ808P0lva7zP003PVW6WlwbofsYyga3A==
+
 "@internationalized/date@^3.0.1", "@internationalized/date@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@internationalized/date/-/date-3.0.2.tgz#1566a0bcbd82dce4dd54a5b26456bb701068cb89"
