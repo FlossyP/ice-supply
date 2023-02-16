@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navbar from '@/Components/navbar';
-import { Spacer, Center, Heading, Card, Flex } from '@chakra-ui/react';
-import { Text, SimpleGrid, Space, Container } from '@mantine/core';
+import { Spacer, Center, Heading, Card, Flex, Container } from '@chakra-ui/react';
+import { Text, SimpleGrid, Space } from '@mantine/core';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap" rel="stylesheet"></link>
       </Head>
     <Navbar/>
-    <Container>
+    <Container maxW='2xl' centerContent>
       <Spacer margin={50}></Spacer>
         <Center>
           <Text
@@ -38,7 +38,7 @@ export default function Home() {
       <SimpleGrid
           cols={2}
           spacing={20}
-          breakpoints={[{ maxWidth: 550, cols: 1, spacing: 20 }]}
+          breakpoints={[{ maxWidth: 700, cols: 1, spacing: 20 }]}
           style={{ marginTop: 30 }}
           >
       <div>
