@@ -25,9 +25,6 @@ export default function App({ Component, pageProps }: AppProps) {
     withNormalizeCSS
     theme={{
       colorScheme: 'dark',
-      colors: {
-        'purple-gray': ['#252028'],
-      },
     }}
     >
       <ChakraProvider theme={theme}>
