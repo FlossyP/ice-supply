@@ -3,7 +3,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { MantineProvider } from '@mantine/core';
 import { extendTheme } from "@chakra-ui/react";
 import Navbar from '../Components/navbar'
-
+import { NextUIProvider } from '@nextui-org/react';
 
 export default function App({ Component, pageProps }: AppProps) {
   
@@ -26,8 +26,9 @@ export default function App({ Component, pageProps }: AppProps) {
       colorScheme: 'dark',
     }}
     >
-      <Navbar/>
+    <NextUIProvider>
       <Component {...pageProps} />
+      </NextUIProvider>
       </MantineProvider>
       </ChakraProvider>
 

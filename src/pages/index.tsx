@@ -1,12 +1,22 @@
 import Head from 'next/head'
 import React from "react";
-
+import { useState } from 'react';
 import { Button, Link, Card, Badge, Avatar, Input, Spacer, Radio, useTheme, Container, Row, Col, Grid } from "@nextui-org/react";
 import { SimpleGrid, Center, TimelineItem, Title, Text } from '@mantine/core';
 import CardContent from '@mui/material/CardContent'
 import Navbar from '../Components/navbar'
+import axios from "axios";
 
 export default function Home() {
+
+  const [ethMarketPrice, setEthPrice] = useState(null)
+
+  async function getETHPrice() {
+    const ethMarketPrice = await axios.get('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD&api_key=2c5d15fc146f0b100aaa198380e191f1bda02d9e5e3dfd7557c32bca0f4e238a')
+    setEthPrice(ethMarketPrice.data.USD)
+  }
+  
+  getETHPrice()
 
   const theme = {
     global: {
