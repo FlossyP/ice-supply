@@ -38,7 +38,7 @@ export default function Home() {
     <Container md justify='center'>
     <Spacer></Spacer>
       <Center>
-        <Title order={3} size="h1">
+        <Title size="h1">
             Decentral Games
         </Title>
         </Center>
