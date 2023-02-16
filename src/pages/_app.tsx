@@ -2,8 +2,8 @@ import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import { MantineProvider } from '@mantine/core';
 import { extendTheme } from "@chakra-ui/react";
-import Navbar from '../Components/navbar'
 import { NextUIProvider } from '@nextui-org/react';
+import { createTheme } from "@nextui-org/react"
 
 export default function App({ Component, pageProps }: AppProps) {
   
@@ -17,6 +17,10 @@ export default function App({ Component, pageProps }: AppProps) {
     },
   });
 
+  const darkTheme = createTheme({
+    type: 'dark',
+  });
+
   return (
   <ChakraProvider>
     <MantineProvider
@@ -26,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
       colorScheme: 'dark',
     }}
     >
-    <NextUIProvider>
+    <NextUIProvider theme={darkTheme}>
       <Component {...pageProps} />
       </NextUIProvider>
       </MantineProvider>
