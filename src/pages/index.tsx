@@ -2,10 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import Container from '@material-ui/core/Container';
 import Navbar from '@/Components/navbar';
 import { Spacer, Center, Heading, Card, Flex } from '@chakra-ui/react';
-import { Text, SimpleGrid, Space } from '@mantine/core';
+import { Text, SimpleGrid, Space, Container } from '@mantine/core';
 import { Typography } from '@material-ui/core';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,7 +24,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap" rel="stylesheet"></link>
       </Head>
     <Navbar/>
-    <Container maxWidth={'xl'}>
+    <Container>
       <Spacer margin={50}></Spacer>
         <Center>
           <Text
