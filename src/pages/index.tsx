@@ -4,18 +4,8 @@ import { useState } from 'react';
 import { Button, Link, Card, Badge, Avatar, Input, Spacer, Radio, useTheme, Container, Row, Col, Grid } from "@nextui-org/react";
 import { SimpleGrid, Center, TimelineItem, Title, Text } from '@mantine/core';
 import CardContent from '@mui/material/CardContent'
-import axios from "axios";
 
 export default function Home() {
-
-  const [ethMarketPrice, setEthPrice] = useState(null)
-
-  async function getETHPrice() {
-    const ethMarketPrice = await axios.get('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD&api_key=2c5d15fc146f0b100aaa198380e191f1bda02d9e5e3dfd7557c32bca0f4e238a')
-    setEthPrice(ethMarketPrice.data.USD)
-  }
-  
-  getETHPrice()
 
   const theme = {
     global: {
@@ -45,7 +35,7 @@ export default function Home() {
         />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap" rel="stylesheet"></link>
       </Head>
-    <Container>
+    <Container md justify='center'>
     <Spacer></Spacer>
       <Center>
         <Title order={3} size="h1">
@@ -57,7 +47,7 @@ export default function Home() {
         </Center>
     </Container>
     <Center>
-    <Container md>
+    <Container md justify='center'>
      <Spacer></Spacer>
      <Grid.Container gap={2} justify="center">
      <Grid xs={12} md={6}>
