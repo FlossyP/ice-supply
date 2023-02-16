@@ -38,7 +38,7 @@ export default function Home() {
       </Head>
     <Container md >
     <Spacer></Spacer>
-    <Grid.Container justify='center'>
+    <Grid.Container justify='center' md>
     <Grid xs={4} md={4}>
     <a href='https://decentral.games/'>
     <Button size={'sm'}>Homepage</Button>
@@ -51,18 +51,14 @@ export default function Home() {
     </Grid>
     </Grid.Container>
     </Container>
-    <Container justify='center'>
-    <Center>
+    <Container md justify='center' alignContent='center' alignItems='center'>
     <Text h2>
             Decentral Games
      </Text>
-     </Center>
-    <Center>
      <Text h4>ICE Supply Statistics</Text>
-     </Center>
     </Container>
     <Center>
-    <Container md justify='center'>
+    <Container md justify='center' alignContent='center' alignItems='center'>
      <Spacer></Spacer>
      <Grid.Container gap={2} justify="center">
      <Grid xs={12} md={6}>
