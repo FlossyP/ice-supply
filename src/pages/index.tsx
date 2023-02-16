@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Button, Link, Card, Badge, Avatar, Input, Spacer, Radio, useTheme, Container, Row, Col, Grid } from "@nextui-org/react";
 import { SimpleGrid, Center, TimelineItem, Title, Text } from '@mantine/core';
 import CardContent from '@mui/material/CardContent'
-import Navbar from '../Components/navbar'
 import axios from "axios";
 
 export default function Home() {
