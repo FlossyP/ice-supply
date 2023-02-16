@@ -56,6 +56,7 @@ export default function Home() {
         <Title size="h4">ICE Supply Statistics</Title>
         </Center>
     </Container>
+    <Center>
     <Container md>
      <Spacer></Spacer>
      <Grid.Container gap={2} justify="center">
@@ -91,6 +92,7 @@ export default function Home() {
     <Spacer></Spacer>
     <Spacer></Spacer>
     </Container>
+    </Center>
     </>
   )
 }
