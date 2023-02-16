@@ -58,21 +58,8 @@ export default function Home() {
     </Container>
     <Container md>
      <Spacer></Spacer>
-     <SimpleGrid
-          cols={2}
-          spacing={'md'}
-          breakpoints={[{ maxWidth: 700, cols: 1, spacing: 20 }]}
-          >
-      <div>
-        <Card style={statCard} isHoverable >
-              <CardContent>
-                <Center>
-                <iframe src='https://dune.com/embeds/2006249/3319814'width="100%" height="460" style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
-                </Center>
-              </CardContent>
-        </Card>
-      </div>
-      <div>
+     <Grid.Container gap={2} justify="center">
+     <Grid xs={12} md={6}>
       <Card style={statCard} isHoverable >
               <CardContent>
                 <Center>
@@ -81,6 +68,8 @@ export default function Home() {
               </CardContent>
         </Card>
         <Spacer></Spacer>
+        </Grid>
+        <Grid xs={12} md={6}>
         <Card style={statCard} isHoverable >
               <CardContent>
                 <Center>
@@ -88,8 +77,17 @@ export default function Home() {
                 </Center>
               </CardContent>
         </Card>
-      </div>
-    </SimpleGrid>
+        </Grid>
+      <Grid xs={12} md={12}>
+      <Card style={statCard} isHoverable >
+              <CardContent>
+                <Center>
+                <iframe src='https://dune.com/embeds/2006249/3319814'width="100%" height="460" style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
+                </Center>
+              </CardContent>
+        </Card>
+      </Grid>
+    </Grid.Container>
     <Spacer></Spacer>
     <Spacer></Spacer>
     </Container>

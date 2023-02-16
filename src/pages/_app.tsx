@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
       colorScheme: 'dark',
     }}
     >
-    <NextUIProvider theme={darkTheme}>
+    <NextUIProvider>
       <Component {...pageProps} />
       </NextUIProvider>
       </MantineProvider>
