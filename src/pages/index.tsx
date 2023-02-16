@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import React from "react";
 import { useState } from 'react';
-import { Button, Link, Card, Badge, Avatar, Input, Spacer, Radio, useTheme, Container, Row, Col, Grid } from "@nextui-org/react";
-import { SimpleGrid, Center, TimelineItem, Title, Text } from '@mantine/core';
+import { Button, Link, Card, Badge, Avatar, Input, Spacer, Radio, useTheme, Container, Row, Col, Grid, Text} from "@nextui-org/react";
+import { SimpleGrid, Center, TimelineItem, Title,  } from '@mantine/core';
 import CardContent from '@mui/material/CardContent'
 
 export default function Home() {
@@ -53,12 +53,12 @@ export default function Home() {
     <Center>
     <Container md justify='center'>
     <Center>
-    <Title size="h1">
+    <Text h1>
             Decentral Games
-     </Title>
+     </Text>
      </Center>
     <Center>
-     <Title size="h1">ICE Supply Statistics</Title>
+     <Text h4>ICE Supply Statistics</Text>
      </Center>
      <Spacer></Spacer>
      <Grid.Container gap={2} justify="center">
