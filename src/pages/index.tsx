@@ -50,8 +50,7 @@ export default function Home() {
     </Grid>
     </Grid.Container>
     </Container>
-    <Center>
-    <Container md justify='center'>
+    <Container justify='center'>
     <Center>
     <Text h1>
             Decentral Games
@@ -60,10 +59,13 @@ export default function Home() {
     <Center>
      <Text h4>ICE Supply Statistics</Text>
      </Center>
+    </Container>
+    <Center>
+    <Container md justify='center'>
      <Spacer></Spacer>
      <Grid.Container gap={2} justify="center">
      <Grid xs={12} md={6}>
-      <Card style={statCard} isHoverable >
+      <Card style={statCard} isHoverable>
               <CardContent>
                 <Center>
                 <iframe src='https://dune.com/embeds/2006249/3319918'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
