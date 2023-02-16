@@ -31,11 +31,11 @@ const NavLink = ({ children, path }: { children: ReactNode; path: string }) => (
   <Box
     px={2}
     py={1}
+    textColor={'#FFFFF'}
     rounded={"md"}
     _hover={{
       textDecoration: "none",
       bg: useColorModeValue("gray.200", "gray.700"),
-      fontFamily: 'Open Sans'
     }}
   >
     <Link href={path}>{children}</Link>

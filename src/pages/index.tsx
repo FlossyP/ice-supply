@@ -56,7 +56,7 @@ export default function Home() {
           style={{ marginTop: 30 }}
           >
       <div>
-        <Card style={statCard} sx={{ position: 'relative'}} borderWeight='10' isHoverable >
+        <Card style={statCard} sx={{ position: 'relative'}} isHoverable >
               <CardContent>
                 <Center>
                 <iframe src='https://dune.com/embeds/2006249/3319814'width="100%" height="460" style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
@@ -65,7 +65,7 @@ export default function Home() {
         </Card>
       </div>
       <div>
-      <Card style={statCard} sx={{ position: 'relative'}} borderWeight='10' isHoverable >
+      <Card style={statCard} sx={{ position: 'relative'}} isHoverable >
               <CardContent>
                 <Center>
                 <iframe src='https://dune.com/embeds/2006249/3319918'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
@@ -73,7 +73,7 @@ export default function Home() {
               </CardContent>
         </Card>
         <Spacer></Spacer>
-        <Card style={statCard} sx={{ position: 'relative'}} borderWeight='10' isHoverable >
+        <Card style={statCard} sx={{ position: 'relative'}} isHoverable >
               <CardContent>
                 <Center>
                 <iframe src='https://dune.com/embeds/2006249/3326219'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
