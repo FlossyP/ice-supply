@@ -53,7 +53,7 @@ export default function Home() {
     </Container>
     <Container justify='center'>
     <Center>
-    <Text h1>
+    <Text h2>
             Decentral Games
      </Text>
      </Center>
@@ -66,7 +66,7 @@ export default function Home() {
      <Spacer></Spacer>
      <Grid.Container gap={2} justify="center">
      <Grid xs={12} md={6}>
-      <Card style={statCard} isHoverable>
+      <Card style={statCard} isHoverable variant="bordered">
               <CardContent>
                 <Center>
                 <iframe src='https://dune.com/embeds/2006249/3319918'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF', borderColor: 'transparent'}}></iframe>
@@ -76,7 +76,7 @@ export default function Home() {
         <Spacer></Spacer>
         </Grid>
         <Grid xs={12} md={6}>
-        <Card style={statCard} isHoverable >
+        <Card style={statCard} isHoverable variant="bordered">
               <CardContent>
                 <Center>
                 <iframe src='https://dune.com/embeds/2006249/3326219'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF', borderColor: 'transparent'}}></iframe>
@@ -85,7 +85,7 @@ export default function Home() {
         </Card>
         </Grid>
       <Grid xs={12} md={12}>
-      <Card style={statCard} isHoverable >
+      <Card style={statCard} isHoverable variant="bordered">
               <CardContent>
                 <Center>
                 <iframe src='https://dune.com/embeds/2006249/3319814'width="100%" height="460" style={{borderRadius: '20px', background: '#FFFFFF', borderColor: 'transparent'}}></iframe>
