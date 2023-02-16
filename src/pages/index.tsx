@@ -35,19 +35,31 @@ export default function Home() {
         />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap" rel="stylesheet"></link>
       </Head>
-    <Container md justify='center'>
+    <Container md >
     <Spacer></Spacer>
-      <Center>
-        <Title size="h1">
-            Decentral Games
-        </Title>
-        </Center>
-        <Center>
-        <Title size="h4">ICE Supply Statistics</Title>
-        </Center>
+    <Grid.Container justify='center'>
+    <Grid xs={4} md={4}>
+    <a href='https://decentral.games/'>
+    <Button size={'sm'}>Homepage</Button>
+    </a>
+    </Grid>
+    <Grid xs={4} md={4}>
+
+    </Grid>
+    <Grid xs={4} md={4}>
+    </Grid>
+    </Grid.Container>
     </Container>
     <Center>
     <Container md justify='center'>
+    <Center>
+    <Title size="h1">
+            Decentral Games
+     </Title>
+     </Center>
+    <Center>
+     <Title size="h4">ICE Supply Statistics</Title>
+     </Center>
      <Spacer></Spacer>
      <Grid.Container gap={2} justify="center">
      <Grid xs={12} md={6}>
