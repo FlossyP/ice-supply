@@ -58,7 +58,7 @@ export default function Home() {
      </Title>
      </Center>
     <Center>
-     <Title size="h4">ICE Supply Statistics</Title>
+     <Title size="h1">ICE Supply Statistics</Title>
      </Center>
      <Spacer></Spacer>
      <Grid.Container gap={2} justify="center">
