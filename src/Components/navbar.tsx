@@ -31,7 +31,7 @@ const NavLink = ({ children, path }: { children: ReactNode; path: string }) => (
   <Box
     px={2}
     py={1}
-    textColor={'#FFFFF'}
+    textColor={'gray.200'}
     rounded={"md"}
     _hover={{
       textDecoration: "none",
@@ -57,13 +57,14 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>                
+            <Box boxSize={'8'}>                
             <Avatar
-                  size={"sm"}
+                  size={'2xs'}
                   src={
                     "https://res.cloudinary.com/dnzambf4m/image/upload/c_scale,w_210,q_auto:good/v1621630083/android-chrome-512x512_rmiw1y.png"
                   }
-                /></Box>
+                />
+            </Box>
             <HStack
               as={"nav"}
               spacing={4}

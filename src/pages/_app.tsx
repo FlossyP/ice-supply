@@ -18,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
   });
 
   return (
+  <ChakraProvider>
     <MantineProvider
     withGlobalStyles
     withNormalizeCSS
@@ -25,11 +26,11 @@ export default function App({ Component, pageProps }: AppProps) {
       colorScheme: 'dark',
     }}
     >
-      <ChakraProvider theme={theme}>
       <Navbar/>
       <Component {...pageProps} />
-      </ChakraProvider>
       </MantineProvider>
+      </ChakraProvider>
+
   )
 
 }

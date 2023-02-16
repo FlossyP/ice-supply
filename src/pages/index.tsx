@@ -51,9 +51,8 @@ export default function Home() {
      <Spacer></Spacer>
      <SimpleGrid
           cols={2}
-          spacing={20}
-          breakpoints={[{ maxWidth: 550, cols: 1, spacing: 20 }]}
-          style={{ marginTop: 30 }}
+          spacing={'md'}
+          breakpoints={[{ maxWidth: 700, cols: 1, spacing: 20 }]}
           >
       <div>
         <Card style={statCard} isHoverable >
