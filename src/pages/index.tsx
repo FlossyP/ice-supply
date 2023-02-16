@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Button, Link, Card, Badge, Avatar, Input, Spacer, Radio, useTheme, Container, Row, Col, Grid, Text} from "@nextui-org/react";
 import { SimpleGrid, Center, TimelineItem, Title,  } from '@mantine/core';
 import CardContent from '@mui/material/CardContent'
+import { borderColor } from '@mui/system';
 
 export default function Home() {
 
@@ -68,7 +69,7 @@ export default function Home() {
       <Card style={statCard} isHoverable>
               <CardContent>
                 <Center>
-                <iframe src='https://dune.com/embeds/2006249/3319918'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
+                <iframe src='https://dune.com/embeds/2006249/3319918'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF', borderColor: 'transparent'}}></iframe>
                 </Center>
               </CardContent>
         </Card>
@@ -78,7 +79,7 @@ export default function Home() {
         <Card style={statCard} isHoverable >
               <CardContent>
                 <Center>
-                <iframe src='https://dune.com/embeds/2006249/3326219'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
+                <iframe src='https://dune.com/embeds/2006249/3326219'  width="100%" height="200"style={{borderRadius: '20px', background: '#FFFFFF', borderColor: 'transparent'}}></iframe>
                 </Center>
               </CardContent>
         </Card>
@@ -87,7 +88,7 @@ export default function Home() {
       <Card style={statCard} isHoverable >
               <CardContent>
                 <Center>
-                <iframe src='https://dune.com/embeds/2006249/3319814'width="100%" height="460" style={{borderRadius: '20px', background: '#FFFFFF'}}></iframe>
+                <iframe src='https://dune.com/embeds/2006249/3319814'width="100%" height="460" style={{borderRadius: '20px', background: '#FFFFFF', borderColor: 'transparent'}}></iframe>
                 </Center>
               </CardContent>
         </Card>

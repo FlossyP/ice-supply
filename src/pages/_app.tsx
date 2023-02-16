@@ -22,7 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
   });
 
   return (
-  <ChakraProvider>
     <MantineProvider
     withGlobalStyles
     withNormalizeCSS
@@ -34,7 +33,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       </NextUIProvider>
       </MantineProvider>
-      </ChakraProvider>
 
   )
 
